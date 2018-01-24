@@ -1,0 +1,21 @@
+1.forms.py
+    # 定义类的属性到列的映射：
+    openid = StringField('openid',validators=[DataRequired()])
+    remember_me = BooleanField('remember_me',default=False)
+
+2.models.py
+若增加了新字段到数据库，
+eg:class User中：
+    about_me = db.Column(db.String(140))
+    last_seen = db.Column(db.DateTime)
+需要运行升级脚本db_migrate.py
+
+3.app.py
+error:sqlalchemy.exc.InvalidRequestError: Object '<Mydata at 0x720d710>' is already attached to session '1' (this is '3')
+分析原因
+两个不同的db交叉混用导致问题，根据报错也可看出，要操作的对象已经隶属于会话1，
+而现在这个请求已经是会话3了。有部分代码还是使用原先的db，与新的db会话发生冲突；
+解决方案
+1、一旦视图函数内涉及db.session的操纵，在函数内进行 from models import db即正常。
+2、将#return User.query.get(int(id))改为
+    return db.session.query(User).get(int(id))
