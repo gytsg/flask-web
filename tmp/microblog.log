@@ -1,0 +1,861 @@
+2018-01-16 15:47:12,858 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:61]
+2018-01-16 15:47:12,874 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:61]
+2018-01-16 15:53:04,017 ERROR: Exception on /login [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1610, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1831, in preprocess_request
+    rv = func()
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 36, in before_request
+    db.session.add(g.user)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1783, in _save_or_update_state
+    self._save_or_update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x6e36080>' is already attached to session '1' (this is '2')
+2018-01-16 15:53:58,122 ERROR: Exception on /login [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1610, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1831, in preprocess_request
+    rv = func()
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 36, in before_request
+    db.session.add(g.user)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1783, in _save_or_update_state
+    self._save_or_update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x6e36080>' is already attached to session '1' (this is '3')
+2018-01-16 16:04:12,289 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-16 16:04:12,305 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-16 16:10:36,296 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-16 16:10:36,296 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-16 16:22:43,101 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-16 16:22:43,117 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-16 16:35:54,822 ERROR: Exception on /user/Jimmy Jim [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 159, in user
+    posts = posts)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\base.html", line 26, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\user.html", line 7, in block "content"
+    <td><img src="{{ user.avatar(128) }}"></td>
+  File "C:\Dpan\work\PyCharm-P\workspace\web\models.py", line 30, in avatar
+    return 'http://www.gravatar.com/avatar/' + hashlib(self.email).hexdigest() + '?d=mm&s=' + str(size)
+TypeError: 'module' object is not callable
+2018-01-16 16:46:43,507 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-16 16:46:43,516 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-16 17:14:42,875 ERROR: Exception on /edit [POST] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 167, in edit
+    if form.validate_on_submit():
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\forms.py", line 25, in validate
+    user = User.query.fliter_by(nickname=self.nickname.data).first()
+AttributeError: 'BaseQuery' object has no attribute 'fliter_by'
+2018-01-16 17:15:01,032 ERROR: Exception on /edit [POST] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 167, in edit
+    if form.validate_on_submit():
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\forms.py", line 25, in validate
+    user = User.query.fliter_by(nickname=self.nickname.data).first()
+AttributeError: 'BaseQuery' object has no attribute 'fliter_by'
+2018-01-16 17:15:13,872 ERROR: Exception on /edit [POST] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 167, in edit
+    if form.validate_on_submit():
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\forms.py", line 25, in validate
+    user = User.query.fliter_by(nickname=self.nickname.data).first()
+AttributeError: 'BaseQuery' object has no attribute 'fliter_by'
+2018-01-16 17:18:12,049 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-16 17:18:12,049 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-16 17:18:31,065 ERROR: Exception on /edit [POST] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 167, in edit
+    if form.validate_on_submit():
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\forms.py", line 25, in validate
+    user = User.query.filter_by(nickname=self.nickname.data).first()
+AttributeError: 'BaseQuery' object has no attribute 'fliter_by'
+2018-01-16 17:18:46,983 ERROR: Exception on /edit [POST] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 167, in edit
+    if form.validate_on_submit():
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\forms.py", line 25, in validate
+    user = User.query.filter_by(nickname=self.nickname.data).first()
+AttributeError: 'BaseQuery' object has no attribute 'fliter_by'
+2018-01-18 10:05:34,332 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 10:41:03,125 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 10:50:37,358 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 14:54:47,418 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 15:47:38,618 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 15:47:38,618 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-18 15:56:47,335 INFO: microblog startup [in app.py:62]
+2018-01-18 16:08:15,740 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 16:08:15,756 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-18 16:20:54,112 ERROR: Exception on /unfollow/john [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 220, in unfollow
+    db.session.add(u)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1790, in _save_or_update_state
+    self._save_or_update_impl(st_)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x717ee80>' is already attached to session '3' (this is '34')
+2018-01-18 16:21:16,710 ERROR: Exception on /unfollow/john [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 220, in unfollow
+    db.session.add(u)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1790, in _save_or_update_state
+    self._save_or_update_impl(st_)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x717ee80>' is already attached to session '3' (this is '38')
+2018-01-18 16:25:49,546 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 16:25:49,546 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-18 16:25:57,384 ERROR: Exception on /unfollow/john [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 220, in unfollow
+    flash('Cannot unfollow '+nickname+ '.')
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1790, in _save_or_update_state
+    self._save_or_update_impl(st_)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x717ee80>' is already attached to session '3' (this is '40')
+2018-01-18 16:26:11,384 ERROR: Exception on /unfollow/john [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 220, in unfollow
+    flash('Cannot unfollow '+nickname+ '.')
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1790, in _save_or_update_state
+    self._save_or_update_impl(st_)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x717ee80>' is already attached to session '3' (this is '42')
+2018-01-18 16:26:39,441 ERROR: Exception on /unfollow/john [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 222, in unfollow
+    db.session.add(u)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1783, in _save_or_update_state
+    self._save_or_update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x6adcd30>' is already attached to session '3' (this is '2')
+2018-01-18 16:27:51,056 ERROR: Exception on /unfollow/john [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 222, in unfollow
+    db.session.add(u)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1783, in _save_or_update_state
+    self._save_or_update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x6cee6a0>' is already attached to session '5' (this is '2')
+2018-01-18 16:29:21,717 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 16:29:21,717 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-18 16:30:15,686 ERROR: Exception on /unfollow/john [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 222, in unfollow
+    db.session.add(u)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1783, in _save_or_update_state
+    self._save_or_update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x76ec710>' is already attached to session '5' (this is '1')
+2018-01-18 16:33:25,915 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 16:33:25,915 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-18 16:33:46,213 ERROR: Exception on /unfollow/john [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 222, in unfollow
+    db.session.add(u)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1783, in _save_or_update_state
+    self._save_or_update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x76d7710>' is already attached to session '5' (this is '6')
+2018-01-18 16:34:44,710 ERROR: Exception on /unfollow/john [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 222, in unfollow
+    db.session.add(u)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1783, in _save_or_update_state
+    self._save_or_update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x789c5c0>' is already attached to session '8' (this is '9')
+2018-01-18 16:35:11,394 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 16:35:11,403 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-18 16:35:27,513 ERROR: Exception on /unfollow/john [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 222, in unfollow
+    db.session.commit()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1783, in _save_or_update_state
+    self._save_or_update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x78bbd68>' is already attached to session '13' (this is '14')
+2018-01-18 16:35:45,259 ERROR: Exception on /unfollow/john [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 221, in unfollow
+    db.session.add(u)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1770, in add
+    self._save_or_update_state(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1783, in _save_or_update_state
+    self._save_or_update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _save_or_update_impl
+    self._update_impl(state)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2078, in _update_impl
+    to_attach = self._before_attach(state, obj)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2162, in _before_attach
+    state.session_id, self.hash_key))
+InvalidRequestError: Object '<User at 0x7698048>' is already attached to session '3' (this is '4')
+2018-01-18 16:39:25,517 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 16:39:25,526 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-18 16:42:08,299 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-18 16:42:08,308 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-19 10:20:57,536 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-19 10:21:43,575 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-19 10:37:28,852 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-19 10:37:28,868 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-19 10:40:10,335 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:62]
+2018-01-19 10:40:10,351 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:62]
+2018-01-19 10:57:49,586 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:63]
+2018-01-19 10:57:49,586 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:63]
+2018-01-19 11:20:30,976 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:63]
+2018-01-19 11:20:30,992 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:63]
+2018-01-19 11:25:01,753 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:63]
+2018-01-19 11:25:01,753 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:63]
+2018-01-19 11:44:03,931 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:63]
+2018-01-19 11:44:03,947 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:63]
+2018-01-19 11:44:09,769 ERROR: Exception on /user/qwert1 [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 179, in user
+    posts=posts)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\user.html", line 37, in template
+    {% if posts.has_prev %}<a href="{{ url_for('user', nickname=user.nickname, page = posts.prev_num }}"><< Newer posts</a>{% else %}<< Newer posts{% endif %} |
+TemplateSyntaxError: unexpected '}', expected ')'
+2018-01-19 11:44:56,153 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:63]
+2018-01-19 11:44:56,153 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:63]
+2018-01-19 11:44:59,289 ERROR: Exception on /user/qwert1 [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 179, in user
+    posts=posts)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\base.html", line 26, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\user.html", line 26, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2018-01-19 11:45:03,915 ERROR: Exception on /user/qwert1 [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 179, in user
+    posts=posts)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\base.html", line 26, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\user.html", line 26, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2018-01-19 11:46:32,256 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:63]
+2018-01-19 11:46:32,256 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:63]
+2018-01-20 09:36:18,299 INFO: microblog startup [in app.py:63]
+2018-01-20 10:14:12,589 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:65]
+2018-01-20 10:14:12,655 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:65]
+2018-01-20 10:46:42,211 INFO: microblog startup [in app.py:67]
+2018-01-20 15:15:12,423 INFO: microblog startup [in app.py:67]
+2018-01-20 15:24:54,194 INFO: microblog startup [in app.py:67]
+2018-01-20 15:27:24,292 INFO: microblog startup [in app.py:67]
+2018-01-20 16:46:39,585 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:75]
+2018-01-20 16:46:39,678 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:75]
+2018-01-20 16:50:25,197 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:75]
+2018-01-20 16:50:25,306 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:75]
+2018-01-20 16:50:59,375 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:75]
+2018-01-20 16:50:59,453 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:75]
+2018-01-20 16:52:20,079 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:75]
+2018-01-20 16:52:20,157 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:75]
+2018-01-20 16:52:22,848 ERROR: Exception on /index [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 124, in index
+    posts=posts)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\base.html", line 10, in top-level template code
+    <div>Microblog:<a href="/index">{{ _('Home') }}</a>
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\ext.py", line 134, in _gettext_alias
+    return __context.call(__context.resolve('gettext'), *args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\ext.py", line 140, in gettext
+    rv = __context.call(func, __string)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 116, in <lambda>
+    lambda x: get_translations().ugettext(x),
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 227, in get_translations
+    [get_locale()],
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 261, in get_locale
+    locale = Locale.parse(rv)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\babel\core.py", line 268, in parse
+    parts = parse_locale(identifier, sep=sep)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\babel\core.py", line 1094, in parse_locale
+    raise ValueError('expected only letters, got %r' % lang)
+ValueError: expected only letters, got 'zh-hans-cn'
+2018-01-20 16:52:26,562 ERROR: Exception on /index [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 124, in index
+    posts=posts)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\base.html", line 10, in top-level template code
+    <div>Microblog:<a href="/index">{{ _('Home') }}</a>
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\ext.py", line 134, in _gettext_alias
+    return __context.call(__context.resolve('gettext'), *args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\ext.py", line 140, in gettext
+    rv = __context.call(func, __string)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 116, in <lambda>
+    lambda x: get_translations().ugettext(x),
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 227, in get_translations
+    [get_locale()],
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 261, in get_locale
+    locale = Locale.parse(rv)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\babel\core.py", line 268, in parse
+    parts = parse_locale(identifier, sep=sep)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\babel\core.py", line 1094, in parse_locale
+    raise ValueError('expected only letters, got %r' % lang)
+ValueError: expected only letters, got 'zh-hans-cn'
+2018-01-20 16:57:18,526 ERROR: Exception on /index [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 124, in index
+    posts=posts)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\base.html", line 10, in top-level template code
+    <div>Microblog:<a href="/index">{{ _('Home') }}</a>
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\ext.py", line 134, in _gettext_alias
+    return __context.call(__context.resolve('gettext'), *args, **kwargs)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\ext.py", line 140, in gettext
+    rv = __context.call(func, __string)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 116, in <lambda>
+    lambda x: get_translations().ugettext(x),
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 227, in get_translations
+    [get_locale()],
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 261, in get_locale
+    locale = Locale.parse(rv)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\babel\core.py", line 268, in parse
+    parts = parse_locale(identifier, sep=sep)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\babel\core.py", line 1094, in parse_locale
+    raise ValueError('expected only letters, got %r' % lang)
+ValueError: expected only letters, got 'zh-hans-cn'
+2018-01-20 16:57:43,946 ERROR: Exception on /login [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_openid.py", line 507, in decorated
+    openid_response, self.extension_responses))
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 147, in after_login
+    flash(gettext('Invalid login. Please try again.'))
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 552, in gettext
+    t = get_translations()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 227, in get_translations
+    [get_locale()],
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_babel\__init__.py", line 261, in get_locale
+    locale = Locale.parse(rv)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\babel\core.py", line 268, in parse
+    parts = parse_locale(identifier, sep=sep)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\babel\core.py", line 1094, in parse_locale
+    raise ValueError('expected only letters, got %r' % lang)
+ValueError: expected only letters, got 'zh-hans-cn'
+2018-01-20 16:59:51,049 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:68]
+2018-01-20 16:59:51,128 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:68]
+2018-01-20 16:59:58,131 ERROR: Exception on /index [GET] [in C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:/Dpan/work/PyCharm-P/workspace/web/app.py", line 117, in index
+    posts=posts)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Dpan\work\PyCharm-P\workspace\web\templates\base.html", line 10, in top-level template code
+    <div>Microblog:<a href="/index">{{ _('Home') }}</a>
+UndefinedError: '_' is undefined
+2018-01-20 17:01:44,032 INFO: microblog startup [in C:\Dpan\work\PyCharm-P\workspace\web\app.py:68]
+2018-01-20 17:01:44,109 INFO: microblog startup [in C:/Dpan/work/PyCharm-P/workspace/web/app.py:68]
